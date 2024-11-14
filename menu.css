@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+#menu{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 lightskyblue;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+#menu:hover{
+    width: 300px;
+}
+
+#icones{
+    width: 100%;
+    padding-left: 10px;
+}
+
+#icones > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item{
+    transform: .2s;
+}
+
+ul li.item:hover{
+    background-color: lightskyblue;
+}
+
+ul li.item a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item a .texto{
+    margin-left: 40px;
+}
+
+ul li.item a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+

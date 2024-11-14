@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        document.onmousedown = function(event) {
+            if (event.button === 2 || event.button === 3) {
+                alert('Indisponível');
+            }
+        };
+        
+        function noBack() {
+            window.history.forward();
+        }
+        window.onload = noBack;
+        window.onpageshow = function(evt) {
+            if (evt.persisted) noBack();
+        };
+        window.onunload = function() {
+            void(0);
+        };
+    </script>
+</head>
+<body class="body">
+    <nav id="menu">
+        <div id="icones">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li class="item">
+                <a href="pagina_professor.html">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="texto">Home</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="alunos.html">
+                    <span class="icon"><i class="bi bi-people-fill"></i></i></span>
+                    <span class="texto">Alunos</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="conta.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></i></i></span>
+                    <span class="texto">Conta</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="index.html">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="texto">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

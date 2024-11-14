@@ -1,0 +1,45 @@
+CREATE DATABASE sis_inte;
+
+CREATE DATABASE sis_inte;
+
+CREATE TABLE Usuario(
+                      Cod_usuario Int Primary key,
+                      Nome_usuario Varchar(50),
+                      Login Varchar(40),
+                      Senha Varchar(40)
+                    );
+
+CREATE TABLE Turma(
+                    Cod_turma Int Primary key auto_increment,
+                    Num_turma Int
+);
+
+CREATE TABLE Aluno(
+                    Cod_aluno Int Primary key auto_increment,
+                    Nome_aluno Varchar(80),
+                    Serie Char(2),
+                    Cod_turma Int,
+                    FOREIGN Key (Cod_turma) references Turma(Cod_turma)
+);
+
+
+
+CREATE TABLE Presenca(
+                      Cod_presenca Int Primary key auto_increment,
+                      Presenca Char(2),
+                      Cod_aluno Int,
+                      FOREIGN Key (Cod_aluno) references Aluno(Cod_aluno)
+);
+
+CREATE TABLE Nota(
+                  Cod_nota Int Primary key auto_increment,
+                  Nota Varchar(3),
+                  Cod_aluno Int,
+                  FOREIGN Key (Cod_aluno) references Aluno(Cod_aluno)
+);
+
+INSERT INTO usuario
+VALUES (2, 'Prof', 'Professor', '123');
+
+INSERT INTO usuario
+VALUES (2, 'Alun', 'Aluno', '456');

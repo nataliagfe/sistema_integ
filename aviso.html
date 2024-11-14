@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background-color: #FFFFFF;
+        }
+        #principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda a altura da tela */
+            width: 100%;
+            z-index: 1;
+        }
+        #conteudo {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.5em; /* Tamanho da fonte aumentado */
+        }
+        a {
+            color: #CC0000;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #f9f8f8; /* Mudança de cor ao passar o mouse */
+        }
+        #fundo {
+    position: relative;
+    width: 98%;
+    height: 110%;
+    top: 1%; 
+    max-width: 1200px;
+    border-radius: 12px;
+    background-color: rgb(40, 43, 115);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <div id="fundo">
+    <div id="principal">
+        <div id="conteudo"> 
+            <p>Dados informados são inválidos!</p>
+            <p>Clique <a href="index.html">aqui</a> para voltar.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
